@@ -28,7 +28,33 @@ public class PayCheque {
         
         nextChequeNumber++;
     }
+
+    public LocalDate getDateIssued() {
+        return dateIssued;
+    }
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public String getMemo() {
+        return memo;
+    }
+
+    public int getChequeNumber() {
+        return chequeNumber;
+    }
+
+    public static int getNextChequeNumber() {
+        return nextChequeNumber;
+    }
     
-   
+   public String toString() {
+       return String.format("Cheque #%d, issued to %s, for the amount of %.2f", getChequeNumber(), getEmployeeName(), getAmount());
+   }
     
 }
