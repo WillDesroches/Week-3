@@ -13,7 +13,7 @@ import java.time.Period;
  *
  * @author Will
  */
-public class Employee {
+public abstract class Employee {
     private String fName;
     private String lName;
     private int sinNumber;
@@ -67,4 +67,7 @@ public class Employee {
     return this.dateOfBirth;
       
     }
+    
+    public abstract PayCheque getPayCheque();
+    
 }
